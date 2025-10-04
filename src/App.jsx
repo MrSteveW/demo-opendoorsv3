@@ -26,9 +26,11 @@ export default function App() {
             gap: "2rem",
           }}
         >
-          <h1 style={{ color: "#020265", fontSize: "3rem" }}>Radio Drake</h1>
+          <h1 style={{ color: "#020265", fontSize: "3rem" }}>
+            Demo booking app
+          </h1>
           <p style={{ color: "#666", fontSize: "1.2rem" }}>
-            Please sign in to access the radio schedule
+            Username: zyx password: abc
           </p>
           <SignInButton mode="modal" />
         </div>
