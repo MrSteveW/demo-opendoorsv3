@@ -1,0 +1,173 @@
+body {
+  background-color: #ffefd5;
+  overflow: hidden;
+}
+
+/* Header bar with centered text and right-aligned user button */
+.header-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 95vw;
+  margin-bottom: 1rem;
+  height: 50px;
+  padding: 0 2rem;
+  position: relative;
+  z-index: 1000;
+}
+
+/* Adding vertical padding to space out Event labels */
+.fc-event {
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
+
+.header-title {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #020265;
+  flex: 1;
+}
+
+.user-button-right {
+  justify-content: flex-end;
+  align-items: center;
+  position: relative;
+  z-index: 1001;
+}
+
+/* Showing coloured time label in calendar */
+.calendar-event-label {
+  font-size: 0.9em;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+/* Showing name in calendar */
+.calendar-event-name {
+  font-size: 1.2em;
+  color: #000000;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  padding: 0.3rem;
+}
+
+/* Style for calendar */
+.fc {
+  height: 90vh !important;
+  min-height: 80vh !important;
+  background-color: #ffefd5;
+  /*text colour*/
+  color: #020265;
+}
+
+/* Style for CalendarSideBar */
+.calendar-sidebar {
+  width: 30vw;
+  height: 85vh;
+  background-color: #ffdead;
+  overflow: auto;
+  border-left: 1px solid #2c2a75;
+  /*text*/
+  color: #000000;
+  padding: 1rem;
+}
+
+.sidebar-date {
+  font-size: 1.3rem;
+  margin-bottom: 0.8rem;
+}
+
+/* CalendarSideBar: Name and Class inputs wider */
+input,
+select {
+  font-size: 1em;
+  height: 2em;
+  width: 80%;
+  margin: 0.7rem;
+  margin-left: 0.5em;
+}
+
+/* CalendarSideBar: Topic input wider */
+textarea.topic {
+  margin-left: 0.5em;
+  font-family: Outfit;
+  height: 3em;
+  font-size: 1.2em;
+  width: 80%;
+  margin-top: 0.8rem;
+}
+
+/* Calendar border colour */
+.fc-scrollgrid,
+.fc-theme-standard td,
+.fc-theme-standard th {
+  border-color: #2c2a75 !important;
+}
+
+/*Current day highlighted*/
+.fc-day-today {
+  background: #f5dd97 !important;
+  border: 2px solid #8a0404 !important;
+}
+
+/*Each day on the left*/
+.fc-daygrid-day-number {
+  float: left !important;
+  margin-left: 0 !important;
+  margin-right: auto !important;
+}
+
+/*Other FullCalendar CSS */
+.calendar-layout {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: calc(100vh - 50px);
+  flex: 1;
+}
+
+.calendar-main {
+  width: 70vw;
+}
+
+/* All buttons */
+button {
+  background-image: linear-gradient(#42a1ec, #0070c9);
+  border: 1px solid #0077cc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  color: #ffffff;
+  cursor: pointer;
+  direction: ltr;
+  font-size: 17px;
+  font-weight: 400;
+  letter-spacing: -0.022em;
+  line-height: 1.47059;
+  min-width: 30px;
+  overflow: visible;
+  padding: 4px 15px;
+  text-align: center;
+  vertical-align: baseline;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  margin: 1.2rem;
+}
+
+button:hover {
+  background-image: linear-gradient(#51a9ee, #147bcd);
+}
+
+button:active {
+  background-image: linear-gradient(#3d94d9, #0067b9);
+  border-color: #006dbc;
+  outline: none;
+}
+
+button:focus {
+  box-shadow: rgba(131, 192, 253, 0.5) 0 0 0 3px;
+  outline: none;
+}
