@@ -28,9 +28,12 @@ export default function App() {
         >
           <h1 style={{ color: "#020265", fontSize: "3rem" }}>
             Demo booking app
+            <br />
+            by Steve Williams
           </h1>
-          <p style={{ color: "#666", fontSize: "1.2rem" }}>
-            Username: zyx password: abc
+          <p style={{ color: "#666", fontSize: "2rem" }}>
+            Username: demoUser
+            <br /> Password: demood
           </p>
           <SignInButton mode="modal" />
         </div>
