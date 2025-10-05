@@ -9,7 +9,7 @@ export default function Header() {
   return (
     <div className="header-bar">
       <div className="header-title">
-        Radio Drake{" "}
+        Radio booking app{" "}
         {role && (
           <span style={{ fontSize: "1rem", color: "#666" }}>
             ({role.charAt(0).toUpperCase() + role.slice(1)})
